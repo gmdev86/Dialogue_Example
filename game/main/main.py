@@ -28,7 +28,7 @@ o_dialogue = Dialogue(font_name, font_size, WHITE, DISPLAYSURF)
 o_rect = o_dialogue.display_dialogue(dialogue_rect, None, None, None, None)
 lines = o_dialogue.wrapline("Now is the time for all good men to come to the aid of their country",
                             dialogue_rect.width - 10, None)
-counter = 0
+counter = font_size
 for line in lines:
     o_dialogue.display_text_animation(o_rect, line, counter, None, None, None, None)
     counter += font_size
